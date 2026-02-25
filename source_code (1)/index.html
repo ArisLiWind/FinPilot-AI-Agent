@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>来财 · RichUp</title>
+
+    <!-- PWA Primary Meta -->
+    <meta name="theme-color" content="#0a1628" />
+    <meta name="description" content="个人现金流管理 · 财富增长追踪" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+
+    <!-- PWA Icons -->
+    <link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/icons/icon-512.png" />
+
+    <!-- iOS PWA Support -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="来财" />
+    <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+    <link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192.png" />
+    <link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512.png" />
+
+    <!-- Android Chrome PWA -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="来财" />
+
+    <!-- Windows / Edge -->
+    <meta name="msapplication-TileImage" content="/icons/icon-192.png" />
+    <meta name="msapplication-TileColor" content="#0a1628" />
+
+    <!-- Splash Screen color (iOS) -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+    <!-- Prevent auto-detection of phone numbers -->
+    <meta name="format-detection" content="telephone=no" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

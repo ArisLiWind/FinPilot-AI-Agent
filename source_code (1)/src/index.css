@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0B1E3D;
+  --blue-1: #1E3A8A;
+  --water-a: #1D4ED8;
+  --water-b: #3B82F6;
+  --safe: #38BDF8;
+  --danger: #EF4444;
+  --text: #E6F0FF;
+  --muted: #7B8794;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: #020c1e;
+  font-family: 'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background: radial-gradient(ellipse at 50% 0%, rgba(29,78,216,0.15) 0%, transparent 70%),
+              #020c1e;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(59,130,246,0.3);
+  border-radius: 2px;
+}
+
+/* Safe area for iOS */
+.safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+/* Number rendering */
+@font-face {
+  font-family: 'Inter';
+  font-display: swap;
+}
+
+/* Animated background particles (subtle) */
+@keyframes float-up {
+  0%   { transform: translateY(0) scale(1); opacity: 0; }
+  10%  { opacity: 0.6; }
+  90%  { opacity: 0.15; }
+  100% { transform: translateY(-80px) scale(0.6); opacity: 0; }
+}
+
+/* Pulse animation for alert elements */
+@keyframes alert-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(239,68,68,0.4); }
+  50%       { box-shadow: 0 0 0 8px rgba(239,68,68,0); }
+}
+.alert-pulse {
+  animation: alert-pulse 1.5s ease-in-out infinite;
+}
+
+/* Glass morphism utility */
+.glass {
+  background: rgba(11, 30, 61, 0.75);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+/* Smooth number transition */
+.number-transition {
+  transition: color 0.3s ease;
+}
+
+/* Active press */
+.active\:scale-98:active {
+  transform: scale(0.98);
+}

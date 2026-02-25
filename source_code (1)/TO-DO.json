@@ -1,0 +1,1 @@
+[{"id":"PWA-1","content":"生成 PWA 图标 (192x192, 512x512)","status":"completed","priority":"high"},{"id":"PWA-2","content":"安装 vite-plugin-pwa 并配置 vite.config.ts","status":"completed","priority":"high"},{"id":"PWA-3","content":"更新 index.html（iOS/Android meta 标签）","status":"completed","priority":"high"},{"id":"PWA-4","content":"构建验证 PWA 功能","status":"completed","priority":"medium"}]
