@@ -1,120 +1,42 @@
-# RichUP-Ai-Agent
+# FinPilot-AI-Agent
+Formerly RichUP | Entry for Tropic of Cancer Geek Festival
 
-RichUP-Ai-Agent 是一个面向个人财务目标管理的 AI Native 产品。
+FinPilot is an AI-native personal finance assistant that focuses on financial goal guidance, real-time decision support, and behavioral coaching. It is not a bookkeeping tool—it is a proactive intelligent agent that helps users stay aligned with their savings and financial targets.
 
-它的核心不是“记账工具”，而是一个围绕 **财务目标实时反馈与行为引导** 的智能代理系统。
+The core mission:
+Every spending choice should bring you closer to your goals.
 
-我们关注的不是流水记录本身，而是：
+## Core Concept
+Traditional finance apps track transactions.
+FinPilot guides decisions.
 
-> 每一笔消费，是否让你更接近你的目标？
+It helps users understand:
+- Whether a purchase will affect long-term savings goals
+- Whether an expense is necessary or can be delayed
+- Whether behavior is deviating from the planned financial path
 
----
+Through AI agent logic, FinPilot provides real-time feedback before transactions, shifting financial management from post-hoc recording to instant guidance.
 
-##  产品核心理念
+## MVP Features
+- User authentication & profile setup
+- Custom savings goal configuration
+- System shortcut integration for payment monitoring
+- Pre-transaction reminders and guidance
+- Automated post-transaction logging
+- Real-time goal progress visualization
 
-传统记账产品解决的是“记录问题”。
+## System Design
+FinPilot operates on a non-intrusive, privacy-first architecture.
+It does not access sensitive payment data directly but uses system-approved triggers to provide feedback safely.
 
-RichUP 解决的是“决策问题”。
+## Tech Stack
+- Mobile: React Native / Expo
+- Backend: Node.js
+- Trigger Layer: iOS Shortcuts
+- AI Core: Decision-making agent model
 
-用户不是需要知道自己花了多少钱，而是需要知道：
+## Vision
+Financial health does not depend on willpower.
+It depends on systems.
 
-- 这笔钱花出去，会不会影响我的年度储蓄目标？
-- 这个消费是必要支出，还是可以延迟？
-- 我是否正在偏离自己设定的财务路径？
-
-RichUP 通过 AI 代理机制，在支付行为发生的关键节点提供即时反馈，让财务管理从“事后复盘”转向“实时决策”。
-
----
-
-##  当前 Demo 流程（MVP）
-
-本仓库当前版本为可演示 Demo，包含以下流程：
-
-1. 注册 / 登录
-2. 设置储蓄目标（例如：一年内攒 5 万）
-3. 导入快捷指令（模拟支付监听）
-4. 模拟支付前提醒
-5. 支付成功后自动记账
-6. 实时更新目标完成进度
-
-当前版本允许在后端未完全接入的情况下通过模拟数据完成完整演示流程。
-
----
-
-##  系统设计逻辑
-
-### 第一性原理思考
-
-问题的本质不是“如何自动记账”。
-
-问题的本质是：
-
-> 如何在用户做出金钱决策的瞬间，让其看到目标偏离程度。
-
-因此我们采用：
-
-- 支付入口聚合
-- 快捷指令触发监听
-- 支付前提示
-- 支付后自动记录
-- 目标完成度实时反馈
-
-我们不直接侵入支付系统，不读取敏感隐私数据，而是通过系统允许的触发机制完成闭环。
-
----
-
-##  技术结构（当前规划）
-
-- 前端：React Native / Expo（移动端）
-- 后端：Node.js（用于交易数据处理与模拟）
-- 支付监听：iOS Shortcuts / 系统通知触发
-- 数据模型：目标驱动型账本结构
-
----
-
-##  目录结构
-RichUP-Ai-Agent/
-├── mobile/ # 移动端代码
-├── backend/ # 后端或模拟接口
-├── docs/ # 演示脚本与设计文档
-├── README.md
-
-
-
-
----
-
-## 目标
-
-我们希望构建：
-
-- 一个围绕目标的智能财务代理
-- 一个能主动引导行为的系统
-- 一个真正帮助用户提高财务健康度的工具
-
-不是统计工具，而是决策辅助系统。
-
----
-
-##  当前状态
-
-- Demo 可运行
-- 后端部分功能模拟
-- 支付触发逻辑为演示版本
-- 正在迭代核心 AI 决策模型
-
----
-
-## 核心愿景
-
-财务健康不是靠自律，而是靠系统。
-
-RichUP 的目标，是让系统成为用户的财务副驾驶。
-
----
-
-## 联系
-
-项目负责人：  
-邮箱：Arisliwind@gmail.com
-微信： Revon267 
+FinPilot acts as your intelligent financial co-pilot.
